@@ -4,4 +4,4 @@
 mvn clean install
 export UUID=$(uuidgen)
 skaffold run -p dev
-reflex -r "\.java$" -- bash -c 'mvn install && skaffold run -p dev'
+reflex -r "\.java$" -- bash -c 'export UUID=$(uuidgen) && mvn install && skaffold run -p dev'
