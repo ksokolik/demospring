@@ -10,6 +10,6 @@ public class SimpleController {
 
     @GetMapping("/hello")
     public String homePage() {
-        return "Hello World - dev edit - v3";
+        return "Hello World - v4";
     }
 }
